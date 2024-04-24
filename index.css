@@ -1,6 +1,9 @@
+@import "base-theme.css";
+@import "blue-white-theme.css";
+/* @import "beige-darkred-theme.css"; */
+
 html, body {
   height: 100vh;
-  overflow: hidden;
 }
 
 body, header, footer, h1, h2, p {
@@ -22,15 +25,25 @@ body {
 }
 
 header {
-  border-bottom: 4px solid darkred;
-  font-family: "Savoye LET";
+  border-bottom: 1px solid var(--color);
   grid-area: header;
   padding: 24px 0;
 }
 
 header h1 {
-  @media (min-width: 768px) {
-    font-size: 42px;
+  font-family: var(--script-font);
+  font-size: 72px;
+  font-weight: normal;
+  @media (min-width: 1024px) {
+    font-size: 52px;
+  }
+}
+
+header h2 {
+  font-size: 36px;
+  font-weight: normal;
+  @media (min-width: 1024px) {
+    font-size: 24px;
   }
 }
 
@@ -45,12 +58,18 @@ main {
   position: relative
 
 }
+
 .project h2 {
   background-color:inherit;
+  border-bottom: 1px solid var(--color);
+  font-size: 52px;
   font-weight: normal;
   padding: 16px 0;
   position: sticky;
   top: 0;
+  @media (min-width: 1024px) {
+    font-size: 32px;
+  }
 }
 
 .project img {
@@ -58,14 +77,19 @@ main {
 }
 
 footer {
+  border-top: 1px solid var(--color);
+  font-size: 36px;
   grid-area: footer;
   padding: 16px 0;
   position: sticky;
   bottom: 0;
+  @media (min-width: 1024px) {
+    font-size: 24px;
+  }
 }
 
 .project, header, footer {
-  background-color: beige;
-  color: darkred;
+  background-color: var(--background-color);
+  color: var(--color);
   width: 100%;
 }

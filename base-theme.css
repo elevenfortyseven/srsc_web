@@ -1,0 +1,7 @@
+@font-face { font-family: BrushScript; src: url("Brush-Script-Italic.ttf"); }
+@font-face { font-family: Beirut; src: url("Hacen-Beirut-Regular.ttf"); }
+
+:root {
+  --script-font: "BrushScript";
+  font-family: "Beirut"; 
+}
