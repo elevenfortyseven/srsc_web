@@ -88,6 +88,10 @@ footer {
   }
 }
 
+footer a {
+  color: var(--color);
+}
+
 .project, header, footer {
   background-color: var(--background-color);
   color: var(--color);
